@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FORM.CSS">
+    <script type="text/javascript">
+        function validateform(){  
+            var Fname=document.myform.Fname.value;  
+            var Lname=document.myform.Lname.value;
+            var Uname=document.myform.Uname.value;
+            var Num=document.myform.Number.value;
+            var email=document.myform.email.value;
+            var password=document.myform.password.value;
+            var confirm = document.myform.confirm.value;  
+              
+            if (Fname==null || name==""){  
+              alert("Section can't be blank");  
+              return false;  
+            }
+            if (Lname==null || name==""){  
+              alert("Section can't be blank");  
+              return false;
+             }
+             if (Uname==null || name==""){  
+              alert("Section can't be blank");  
+              return false;
+              }
+              if (Num==null || name==""){  
+              alert("Section can't be blank");  
+              return false;
+              }
+              if (email==null || name==""){  
+              alert("Section can't be blank");  
+              return false;
+              }
+              if (password==null || name==""){  
+              alert("Section can't be blank");  
+              return false;
+              }
+              else if(password.length<6){  
+              alert("Password must be at least 6 characters long.");  
+              return false;
+                }
+              if (confirm==null || name==""){  
+              alert("Section can't be blank");  
+              return false;
+              }
+              if (confirm!=password) {
+                alert("Password and confirm password are not same");
+                return false;
+              }
+            }  
+          
+    </script>
+</head>
+<body>
+    <div class="container" style=" background:linear-gradient(
+      180.43deg
+      , rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.70) 100%), url(download.jfif)">
+                  <div class ="inbox">
+                <div class="topnav">
+                              <a href="home.html">Home</a>
+                              <a  href="login.html">login</a>
+                              <a href="cart.html">Cart
+                              <img src="photos\cart.png" height="14" width="14">
+                              </a>
+                              <a class="active" href="FORM.html"> Sign up</a>
+                              <a href="contactus.html">24*7 Help</a>
+                              <a href="aboutus.html"> About us</a>
+                              
+                          
+                </div>        
+            </div>
+        <div class="FORM">
+            <form name="myform" onsubmit="return validateform()">
+                <br><br><label for="Fname">First Name</label>
+                <br><input type="text" name="Fname" id="Fname" placeholder="Sahil">
+                <br><label for="Lname">Last Name</label>
+                <br><input type="text" name="Lname" id="Lname" placeholder="Jaju">
+                <br><label for="Uname">User Name</label>
+                <br><input type="text" name="Uname" id="Uname" placeholder="SahilJaju">
+                <br><label for="Number">Phone Number</label>
+                <br><input type="text" name="Number" id="Number" placeholder="7666653699">
+                <br><label for="email">E-mail</label>
+                <br><input type="email" name="email" id="email" placeholder="Jaju">
+                <br><label for="Password">Password</label>
+                <br><input type="Password" name="Password" id="Password" placeholder="Sahil@023">
+                <br><label for="Confirm">Confirm Password</label>
+                <br><input type="Password" name="Confirm" id="Confirm" placeholder="Sahil@023">
+                <br><a href="login.html"><br><input type="submit" onclick="return validateform()" value="Submit"></a>
+                <a href="login.html"> Already have an account?</a>
+            </form>
+        </div>    
+    </div>
+</body>
+</html>
+
+
+

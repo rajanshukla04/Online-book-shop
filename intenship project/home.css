@@ -1,0 +1,248 @@
+.container{
+	background-color: aliceblue;
+	padding-top:20px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.inbox{
+	background-color: aliceblue;
+}
+
+.topnav{
+	overflow: hidden;
+	background-color: aliceblue;
+}
+
+.topnav a{
+	float: right;
+	display: block;
+	color: navy;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	background-color: orange;
+}
+
+.topnav a:hover{
+	background-color: brown;
+	color: white;
+}
+
+.topnav a.active{
+	background-color: steelblue;
+	color: white;
+}
+
+.topnav input[type=text]{
+	float: left;
+	padding: 6px;
+	border: black;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+}
+marquee{
+	direction: alternate;
+	color: rgb(0, 0, 0);
+	background-color: rgb(240, 168, 142);
+}
+
+.centre{
+	border-radius: 50px 50px 50px 50px;
+	max-height: 200px;
+}
+.row{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 20 -16px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgb(255, 255, 255);
+} 
+.col-20{
+  -ms-flex: 20%;
+  flex: 20%;
+}
+.col-20 a{
+	text-decoration: none;
+	color: teal;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.col-20 a:hover{
+	color: rgb(145, 61, 46);
+	font-size: 19px;
+	text-decoration: underline;
+	transition: font-size 0.25s;
+}
+.col-20 img{
+	box-shadow: 0 0 40px rgb(87, 22, 22);
+}
+
+.col-50{
+  -ms-flex: 50%;
+  flex: 50%;
+  text-align: center;
+	background-color: lightcyan;
+}
+.col-25{
+	-ms-flex: 25%;
+	flex: 25%;
+
+}
+.col-25 a{
+	text-decoration: none;
+	color: teal;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	
+}
+.col-25 a:hover{
+	color: rgb(145, 61, 46);
+	font-size: 19px;
+	text-decoration: underline;
+	transition: font-size 0.25s;
+}
+.col-25 img{
+	box-shadow: 0 0 40px rgb(87, 22, 22);
+}
+.centre{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+h3{
+	text-align: center;
+	word-wrap: break-words;
+}
+.footer{
+	
+	padding: 20px;
+} 
+
+.footer a{
+	/* border:2px solid black; */
+	text-decoration: none;
+	padding: 10px;
+	font-size: 20px;
+	float: left;
+	
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footer a:hover{
+	color: white;
+	border: 2px solid black;
+	background-color: rgb(15, 7, 7);
+	transition: all 0.5s;
+	
+}
+.btn5 a {
+	float:initial;
+	
+
+}
+
+/* popup */
+.big{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+.small{
+    width:500px;
+    height: 350px;
+    background-color:#814ebf;
+    box-shadow: 0px 0px 20px rgb(255, 254, 254);
+    text-align: center;
+    padding: 20px;
+	border-radius: 30px;
+}
+input{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 15px;
+   width: 50%;
+   display: block;
+   text-align: center;
+   margin: 30px auto;
+   padding: 10px;
+   border: none;
+}
+input:hover{
+	border:5px solid rgb(153, 123, 123);
+}
+.button {
+    background-color:black;
+    width: 80px;
+    padding: 10px 40px;
+	color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+	box-shadow: 0px 0px 10px black;
+}
+    
+.button:hover{
+    color: #814ebf;
+    background-color: rgb(255, 247, 247);
+    /* padding: 13px 45px; */
+    transition: all 0.25s;
+}
+.close{
+   float: right;
+   font-size: 30px;
+   transform: rotate(45deg);
+   color: white;
+   cursor: pointer;
+    
+}
+/* log */
+
+.signup{
+    padding: 30px 125px;
+    
+}
+.signup a{
+    color: white;
+}
+.signup a:hover{
+    color: black;
+}
+.big2{
+	width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+.small2{
+	width:500px;
+    height: 450px;
+    background-color:#814ebf;
+    box-shadow: 0px 0px 20px rgb(255, 253, 253);
+    text-align: center;
+    padding: 20px;
+	border-radius: 30px;
+
+}
+.login{
+	padding: 30px 125px;
+}
+.login a{
+		color: white;
+}
+.login a:hover{
+	color: black;
+}

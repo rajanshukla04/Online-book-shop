@@ -1,0 +1,141 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+span {
+    font-weight: bolder;
+    font-size: 3em;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.nav {
+    background-color: beige;
+    padding: 1em;
+}
+
+.logo {
+    align-self: center;
+    width: 3rem;
+    /* box-shadow: 1px 1px 1px 1px lightcoral; */
+}
+
+.logo:hover {
+    opacity: 70%;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #232323;
+    font-weight: bold;
+
+    border-radius: 100px;
+    box-shadow: 0.2em 0.2em 0.2em brown;
+    padding: 0.2em 0.5em;
+}
+
+.nav__link--btn {
+    color: beige;
+    background-color: brown;
+    padding: 0.2em 0.5em;
+    border-radius: 50px;
+    box-shadow: 0.2em 0.2em 0.2em rgb(199, 123, 88);
+
+}
+
+.nav__link--btn:hover {
+}
+
+.nav__link:hover {
+    opacity: 70%;
+}
+
+.nav__item + .nav__item {
+    margin-left: 3em;
+}
+
+.hero__section {
+    background-color: lightcoral;
+    padding-top: 5em;
+}
+
+.hero__content {
+    /* padding: 2em; */
+
+}
+
+.hero__text {
+    width: 50%;
+    margin-bottom: 4em;
+}
+
+.btn {
+    width: fit-content;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: darkred;
+    font-size: 2.3rem;
+    font-family: serif;
+    font-weight: bold;
+
+    background-color: beige;
+    border-radius: 100px;
+    padding: 0.2em 0.5em;
+    box-shadow: 0.31em 0.31em 0.31em brown;
+}
+
+.btn:hover {
+    opacity: 70%;
+}
+
+.offers {
+    background-color: yellow;
+    margin-top: 5em;
+    padding: 1em 0;
+
+    font-weight: bold;
+
+}
+
+.cate__container {
+    width: 100%;
+    padding: 1em;
+    flex-grow: 1;
+
+    text-align: center;
+    border: 1px solid black;
+    margin: 1.5em 0;
+}
+
+.cate__container + .cate__container {
+    margin-left: 1em;
+}
+
+.cate--title {
+    font-weight: bolder;
+    font-size: 2em;
+}

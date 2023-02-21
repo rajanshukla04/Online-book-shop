@@ -1,0 +1,72 @@
+body {
+    background-color: steelblue;
+	background-size: cover;
+}
+
+body {
+	padding-top: 70px;
+}
+
+
+.img-thumbnail {
+    margin: 20px 35px;
+    width: 25%;
+}
+
+h6, h5 {
+    text-align: center;
+    color: #0e3229;
+    margin: 0;
+    padding: 0.2rem auto;
+}
+form {
+    padding-bottom: 20px;
+}
+#submit {
+    margin-top: 10px;
+}
+.container{
+    background-color: aliceblue;
+    padding-top:20px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.inbox{
+    background-color: blue;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+.topnav a{
+    float: right;
+    display: block;
+    color: navy;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: orange;
+}
+
+.topnav a:hover{
+    background-color: brown;
+    color: white;
+}
+
+.topnav a.active{
+    background-color: steelblue;
+    color: white;
+}
+
+.topnav input[type=text]{
+    float: left;
+    padding: 6px;
+    border: black;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}

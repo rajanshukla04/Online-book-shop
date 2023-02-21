@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+
+.top{
+  
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: row;
+  background-color: aliceblue;
+  justify-content: flex-end;
+}
+
+.menu a{
+    float: right;
+    display: block;
+    color: navy;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: orange;
+
+}
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+
+.layout{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.head{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding: 20px 50px;
+    border-bottom: 3px solid blueviolet;
+}
+.row{
+    display: flex;
+}
+
+.left-side{
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    border-right: 2px solid brown;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+    border-bottom: 2px solid purple;
+   
+}
+.right-side{
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 0;
+    padding-top: 40px;
+    background-color: rgb(225, 225, 245);
+    padding-left: 200px;
+    border-bottom: 2px solid purple;
+
+    /* border: 2px solid;
+    border-radius: 30px; */
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    }
+    
+.form input{
+    
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    width: 270px;
+    padding: 7px;
+   
+}
+.form input:hover{
+    border-radius: 30px;
+    border: 3px solid rgb(86, 86, 177);
+}
+
+#btn{
+    background-color:black;
+    border: none;
+    color:white;
+    background-color:#814ebf;
+    
+    
+}
+#btn:hover{
+    padding: 6px;
+    transition: padding 0.25s, background-color 0.3s; 
+    background-color: blanchedalmond;
+    color:black;
+    border: 1px solid;
+
+
+}
+.two{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #814ebf;
+
+
+}
+.left{
+    flex-basis: 60%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    /* border: 2px solid black; */
+    padding: 30px 50px;
+    color: white;
+
+}
+.right{
+    flex-basis: 40%;
+    
+    /* align-items: center; */
+    padding-top: 160px;
+    padding-left:120px
+    
+}
+.right a{
+       font-size: 20px;
+       text-decoration: none;
+       padding: 20px 50px;
+       color:black;
+            background-color: white;
+       
+}
+.right a:hover{
+    padding: 30px 60px;
+    text-decoration: none;
+    color: black;
+    transition: padding 0.25s ,color 0.25s;
+}

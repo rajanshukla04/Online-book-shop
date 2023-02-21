@@ -1,0 +1,73 @@
+<!doctype html>
+    <head>
+    	<title>Login E-Book</title>
+    	<link rel="stylesheet" type="text/css" href="login.css">
+    	<script type="text/javascript">
+        function validateform(){  
+            var name=document.myform.name.value;  
+            var password=document.myform.password.value;  
+              
+            if (name==null || name==""){  
+              alert("Name can't be blank");  
+              return false;  
+            }else if(password.length<6){  
+              alert("Password must be at least 6 characters long.");  
+              return false;  
+            }  
+           }  
+    </script>
+    </head>
+    <body>
+    	<div class="container">
+			<div class ="inbox">
+				<div class="topnav">
+							  <a href="home.html">Home</a>
+							  <a class="active" href="login.html">login</a>
+							  <a href="cart.html">Cart
+							  <img src="photos\cart.png" height="14" width="14">
+							  </a>
+							  <a href="FORM.html"> Sign up</a>
+							  <a href="contactus.html">24*7 Help</a>
+							  <a href="aboutus.html"> About us</a>
+							  
+						  
+				</div>		  
+    	    </div>
+    	<div class="whole" >
+				
+		    	<form name="myform" action="home.html" onsubmit="return validateform()" method="post">
+		    		<br>
+		    		<br>
+		    		<h2 style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; color: white;">Login Form</h2>
+		    		<hr>
+					<div class="log">
+		    		<div class="form-group">
+			    		<label id="username"></label>
+			    		<input type="text" id="username" name="username" value="" placeholder="Username" required />
+			    	    
+		    	    </div>
+		    	    <div class="form-group">	
+			    		<label id="pass"></label>
+			    		<input type="text" id="pass" name="password" placeholder="Password" required/>
+			    	</div>
+				    <div class="forget"><a href="">forget password?</a></div>
+		    		<div id="log">
+		    		<input type="submit" id="log" name="log" value="Login">
+					</div>
+					<div id="signup"><a href="FORM.HTML">Need an account? Sign up now</a></div>
+
+					</div>
+		    	</form>
+		    
+		    <?php
+		    	$n=$_POST['name'];
+		    	$b=$_POST['password']
+
+		    	echo "Username name".$n
+		    	echo "password".$b
+		     ?> 
+			   
+        </div>
+
+		 </body>
+	</html>
